@@ -1,0 +1,30 @@
+.akan-name-display {
+    background-color:beige;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .generated-name {
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+  }
+  .photos{
+    border: 1px solid black;
+    margin-top: 20px;
+    padding: 20px;
+    width: 1020px;
+    border-radius: 10px;
+    background-color: beige;
+  }
+  .body{
+    background-color: aqua;
+  }
+  .header{
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 10px;
+    background-color: beige;
+  }
