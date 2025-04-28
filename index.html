@@ -3,37 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AKAN NAMES</title> 
+    <title>Akan Name Generator</title> 
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body class="body">
-    <h1 class="header">Akan name generator</h1>
+    <h1 class="header">Akan Name Generator</h1>
 
-    <p>Akan names are ghanian names given to children born on specific days of the week. This is a website helps the user to generate he Akan names based on the week and day he/she was born.
-        In ghana this is a culture preserved well to ensure the identity is preserved and kept well.</p>
-    <button>Click Here</button>
+    <p>
+        Akan names are Ghanaian names given to children born on specific days of the week. 
+        This website helps users generate their Akan names based on the day of the week they were born. 
+        In Ghana, this is a well-preserved cultural tradition to ensure identity is maintained.
+    </p>
+
     <form id="akan-form">
-       Enter <input type="number" id="day" placeholder="Day of birth" required />
-        <input type="number" id="month" placeholder="Month" required />
+        <label for="day">Day of Birth:</label>
+        <input type="number" id="day" placeholder="Day" min="1" max="31" required />
+
+        <label for="month">Month:</label>
+        <input type="number" id="month" placeholder="Month" min="1" max="12" required />
+
+        <label for="year">Year:</label>
         <input type="number" id="year" placeholder="Year" required />
-        
-        <label><input type="radio" name="gender" value="male" /> Male</label>
-        <label><input type="radio" name="gender" value="female" /> Female</label>
-      
-        <button type="submit">submit</button>
-      </form>
-      <section> 
-      <div id="akan-name-display">
-        <p id="generated-name"></p>
-      </div>
-      <div class="photos">
-        <img src="akan.jpg" alt="akan.jpg">
-      </div>
-      <div class="photos">
-        <img src="project image.png" alt="project image.png">
-      </div>
-      </section>
+
+        <label>
+            <input type="radio" name="gender" value="male" required /> Male
+        </label>
+        <label>
+            <input type="radio" name="gender" value="female" required /> Female
+        </label>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <section>
+        <div id="akan-name-display">
+            <p id="generated-name"></p>
+        </div>
+        <div class="photos">
+            <img src="akan.jpg" alt="Akan cultural image">
+        </div>
+        <div class="photos">
+            <img src="project image.png" alt="Project image">
+        </div>
+    </section>
+
     <script src="src/script.js"></script>
-    
 </body>
 </html>
